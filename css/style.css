@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    font-family: 'Roboto', sans-serif;
+}
+.clear {
+    clear: both;
+}
+nav ul li {
+    display: inline-block;
+    padding: 10px 15px 10px;
+}
+nav ul li a {
+    text-decoration: none;
+}
+.carousel {
+    background: url(../img/2.jpg);
+    height: 900px;
+    background-size: cover;
+    background-position: top center;
+}
+
+.intro__content {
+    float: left;
+    width: 30%;
+    text-align: center;
+}
+.intro__content h2 {
+    font-weight: 700;
+    font-size: 32px;
+}
+.intro__text p {
+    text-align: justify;
+}
