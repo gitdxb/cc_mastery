@@ -9,29 +9,335 @@ html, body {
 .clear {
     clear: both;
 }
+.header {
+    width: 75%;
+    margin: auto;
+}
+.header__title {
+    padding-top: 33px;
+    padding-bottom: 12px;
+}
+.header__logo {
+    font-size: 36px;
+    text-decoration: none;
+    text-align: center;
+}
+.header__title {
+    font-size: 36px;
+    font-weight: bold;
+}
+.header__logo i {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    background-color: #002146;
+    font-size: 20px;
+    vertical-align: bottom;
+    color: #fdc800;
+    display: inline-block;
+}
 nav ul li {
     display: inline-block;
-    padding: 10px 15px 10px;
+    padding: 15px 12px 15px;
 }
 nav ul li a {
     text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: #2d2f3e;
 }
 .carousel {
     background: url(../img/2.jpg);
-    height: 900px;
+    height: 750px;
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: top center;
 }
 
-.intro__content {
+.intro__item {
     float: left;
-    width: 30%;
-    text-align: center;
+    width: 50%;
+    /* text-align: center; */
+    /* border: 1px solid red; */
+    height: 500px;
+    padding: 0 10px;
+
+}
+.intro__content .intro__image img {
+    width: 100%;
+}
+.intro__content .intro__text p {
+    width: 95%;
+}
+.intro__content {
+    padding: 70px;
+    width: 80%;
+    margin: auto;
 }
 .intro__content h2 {
     font-weight: 700;
-    font-size: 32px;
+    font-size: 35px;
+    text-align: left;
+    padding-bottom: 12px ;
 }
 .intro__text p {
-    text-align: justify;
+    text-align: left;
+    color: gray;
+    font-size: 18px;
 }
+.intro__text button {
+    padding: 15px 27px;
+    float: left;
+    margin-top: 45px;
+    border: 0 solid;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #fdc800;
+}
+.intro__text button:hover {
+    background-color: rgba(128, 128, 128, 0.158);
+}
+.intro__image img {
+    border-radius: 0 5px 5px 0;
+}
+.numbers {
+    padding: 85px;
+    background: rgba(128, 128, 128, 0.128);
+    width: 100%;
+}
+.numbers__content {
+    width: 80%;
+    margin: auto;
+}
+.numbers__item {
+    float: left;
+    width: 25%;
+    text-align: left;
+}
+.numbers__item span {
+    display: inline-block;
+}
+.numbers__item span:first-of-type {
+    font-size: 55px;
+    font-weight: bold;
+    padding-right: 10px;
+}
+.numbers__item span:last-of-type {
+    font-size: 22px;
+}
+.majors {
+    height: 600px;
+    width: 100%;
+}
+.majors__content {
+    width: 80%;
+    margin: auto;
+    padding: 35px;
+    height: 100%;
+    position: relative;
+}
+.majors__elements {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.majors__content-item {
+    float: left;
+    padding: 45px 35px;
+    background-color: #002146;
+    text-align: center;
+    margin: 13px 13px;
+    border-radius: 5px ;
+    width: 23%;
+}
+.majors__content-item i {
+    font-size: 45px;
+    padding-bottom: 15px;
+    color: #fff;
+}
+.majors__content-item p {
+    font-size: 20px;
+    /* font-weight: bold; */
+    color: white;
+}
+.blog {
+    height: 940px;
+    background-color: rgba(128, 128, 128, 0.128);
+}
+.blog__main {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    position: relative;
+    
+}
+.blog__container {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.blog__posts, .blog__events {
+    height: 830px;
+    float: left;
+    width: 690px;
+}
+
+.blog__posts-image, .blog__posts-article {
+    float: left;
+    width: 50%;
+    height: 210px;
+    background-color: #fff;
+}
+.blog__posts-image img {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    padding-left: 22px;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+.blog__posts-article {
+    padding: 20px;
+}
+.blog__posts-article h3 {
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+.blog__posts-article p:first-of-type {
+    color: rgb(161, 160, 160);
+    padding-bottom: 5px;
+}
+.blog__posts-item {
+    background: #fff;
+}
+
+.blog__posts-item hr {
+    border: 0.1px solid rgba(187, 187, 187, 0.142);
+    width: 83%;
+    margin: auto;
+}
+.blog__posts .blog__button, .blog__events .blog__button {
+    text-align: right;
+}
+.blog__events .blog__button {
+    margin-right: -67px;
+    margin-top: -35px;
+}
+.blog__button button {
+    padding: 15px 27px;
+    margin-top: 20px;
+    border: 0 solid;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #fdc800;
+}
+.blog__posts h2, .blog__events h2 {
+    width: 100%;
+    padding: 40px 0;
+    text-align: left;
+}
+.blog__events h2 {
+    margin-left: 65px;
+}
+.blog__events-content {
+    width: 100%;
+    /* margin: 20px ; */
+    margin-left: 65px;
+    margin-bottom: 35px;
+    padding: 20px;
+    background: rgb(255, 255, 255);
+    height: 240px;
+  }
+  .blog__card {
+    width: 33%;
+    text-align: center;
+  }
+  .blog__card-top {
+    background-color: #fdc800;
+    padding: 15px 0;
+    width: 66%;
+    border-radius: 7px 7px 0 0;
+  }
+  .blog__card-top p:first-of-type {
+    font-size: 45px;
+    font-weight: bold;
+}
+  .blog__card-bottom {
+    background-color: #002146;
+    padding: 15px 2px;
+    width: 66%;
+    border-radius: 0 0 7px 7px;
+    color: #fff;
+    font-size: 20px;
+  }
+  .blog__events-items  {
+    padding-left: 20px;
+    width: 75%;
+    height: 100%;
+    margin-left: -68px;
+  }
+  .blog__card, .blog__events-items {
+      float: left;
+  }
+  .blog__events-items p, .blog__posts-article p:last-of-type {
+      color: rgb(95, 95, 95);
+      padding-top: 20px;
+      line-height: 1.5;
+      font-size: 17px;
+  }
+  .vl {
+    border-left: 1px solid rgba(148, 148, 148, 0.648);
+    height: 30px;
+    margin: 0 10px 0;
+  }
+  .blog__time {
+      padding: 13px 0;
+      color: rgb(2, 2, 32);
+      font-size: 18px;
+      margin-top: 30px;
+  }
+
+  /* Contact and footer */
+  .contact {
+      background: #002146;
+      height: 700px;
+      width: 100%;
+      color: #fff;
+  }
+ .contact__container {
+     margin: auto;
+     width: 80%;
+     padding: 10% 0;
+ }
+ .contact__wrapper ul li {
+     list-style-type: none;
+ }
+ .contact__wrapper ul li a {
+    text-decoration: none;
+    color: white;
+    line-height: 2;
+ }
+ .contact__us, .contact__feature, .contact__links {
+     float: left;
+     width: calc(100% / 3);
+ }
+ .contact__container hr {
+     margin: 45px 0;
+     border-top: 0px solid #7d7d7ded;
+ }
+ .contact__wrapper h2 {
+     padding-bottom: 25px;
+ }
+ .contact__us {
+     line-height: 1.8;
+ }
+ .contact__us i {
+     color: yellow;
+     padding-right: 12px;
+ }
