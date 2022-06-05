@@ -152,6 +152,7 @@ nav ul li a {
     margin: 13px 13px;
     border-radius: 5px ;
     width: 23%;
+    cursor: pointer;
 }
 .majors__content-item i {
     font-size: 45px;
@@ -237,10 +238,14 @@ nav ul li a {
     cursor: pointer;
     background-color: #fdc800;
 }
+.blog__button button:hover {
+    background-color: rgba(128, 128, 128, 0.158);
+}
 .blog__posts h2, .blog__events h2 {
     width: 100%;
     padding: 40px 0;
     text-align: left;
+    font-size: 33px;
 }
 .blog__events h2 {
     margin-left: 65px;
@@ -306,14 +311,14 @@ nav ul li a {
   /* Contact and footer */
   .contact {
       background: #002146;
-      height: 700px;
+      height: 550px;
       width: 100%;
       color: #fff;
   }
  .contact__container {
      margin: auto;
      width: 80%;
-     padding: 10% 0;
+     padding: 90px 0;
  }
  .contact__wrapper ul li {
      list-style-type: none;
